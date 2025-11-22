@@ -12,7 +12,6 @@ public class Lab1l1 {
         System.out.print("add Number : ");
         int number2 = Getvalue.nextInt();
 
-        System.out.println("Sum : "+(number1+number2));
+        System.out.println("Sum : "+number1+" + "+number2+" = "+(number1+number2));
     }
-
 }
