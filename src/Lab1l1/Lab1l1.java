@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Lab1l1 {
     public static void main(String[]args) {
+        System.out.print("Program to add numbersr : + : ");
         Scanner Getvalue = new Scanner(System.in);
 
         System.out.print("add Number : ");
@@ -15,3 +16,4 @@ public class Lab1l1 {
         System.out.println("Sum : "+number1+" + "+number2+" = "+(number1+number2));
     }
 }
+
