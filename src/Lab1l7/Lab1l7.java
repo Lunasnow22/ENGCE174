@@ -18,5 +18,5 @@ public class Lab1l7 {
     	
     	System.out.print("Sum "+ number1 +" :"+ sum + ":");
     }
-
 }
+
