@@ -3,10 +3,10 @@ import java.util.Scanner;
 
 public class Lab1l4 {
     public static void main(String[]args) {
-        Scanner SumNumber = new Scanner(System.in);
+        Scanner Getvalue = new Scanner(System.in);
 
         System.out.print("Enter score : ");
-        int number1 = SumNumber.nextInt();
+        int number1 = Getvalue.nextInt();
 
         if (number1 >= 80 ) {
         	System.out.println("You got the grade [A]");
@@ -33,4 +33,5 @@ public class Lab1l4 {
         	System.out.println("You got the grade [F]");
         }
     }
+
 }
