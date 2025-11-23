@@ -1,13 +1,14 @@
 package Lab1l5;
+
 import java.util.Scanner;
 
 
 public class Lab1l5 {
     public static void main(String[]args) {
-        Scanner SumNumber = new Scanner(System.in);
+        Scanner Getvalue = new Scanner(System.in);
 
         System.out.print("Enter score : ");
-        int number1 = SumNumber.nextInt();
+        int number1 = Getvalue.nextInt();
 
         if (number1 == 1 ) {
         	System.out.println("Americano");

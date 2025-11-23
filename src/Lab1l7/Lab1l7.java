@@ -3,21 +3,19 @@ import java.util.Scanner;
 
 public class Lab1l7 {
     public static void main(String[] args) {
-    	Scanner Getvalue = new Scanner(System.in);
+    	Scanner SumNumber = new Scanner(System.in);
     	long sum = 0;
     	
     	System.out.print("add number [N] : ");
-    	int number1 = Getvalue.nextInt();
+    	int number1 = SumNumber.nextInt();
     	
     	for(int i = 0; i < number1; i++) {
     		System.out.print("number :"+(i+1)+": ");
-    		int number2 = Getvalue.nextInt();
+    		int number2 = SumNumber.nextInt();
     		sum += number2;
     	}
-    	Getvalue.close();
+    	SumNumber.close();
     	
     	System.out.print("Sum :"+ sum + ":");
     }
 }
-
-

@@ -2,7 +2,7 @@ package Lab1l8;
 import java.util.Scanner;
 
 public class Lab1l8 {
-    public static void main(String[] args) {
+    public static void main(String[] Lunasnow) {
     	Scanner scannerNumber = new Scanner(System.in);
     	
     	System.out.print("add number [N] : ");
