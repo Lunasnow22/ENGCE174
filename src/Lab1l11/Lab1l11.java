@@ -12,7 +12,7 @@ public class Lab1l11 {
 		return sum;
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] Lunasnow) {
 		Scanner Getvalue = new Scanner(System.in);
 		
 		System.out.print("add number [N] : ");
@@ -31,3 +31,4 @@ public class Lab1l11 {
 		System.out.println("Sum : "+totalSum);
 	}
 }
+
