@@ -7,7 +7,7 @@ public class Lab1l10 {
 		double area = width * height;
 		return area;
 	}
-	public static void main(String[] args) {
+	public static void main(String[] Lunasnow) {
 		Scanner Getvalue = new Scanner(System.in);
 		
 		System.out.print("Get width value : ");
@@ -23,3 +23,4 @@ public class Lab1l10 {
 		System.out.println("CalculateArea : "+CalculateArea);
 	}
 }
+
