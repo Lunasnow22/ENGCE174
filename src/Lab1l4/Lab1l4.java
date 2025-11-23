@@ -33,5 +33,5 @@ public class Lab1l4 {
         	System.out.println("You got the grade [F]");
         }
     }
-
 }
+
