@@ -3,7 +3,7 @@ package Lab1l1;
 import java.util.Scanner;
 
 public class Lab1l1 {
-    public static void main(String[]args) {
+    public static void main(String[]Lunasnow) {
         System.out.print("Program to add numbersr : + : ");
         Scanner Getvalue = new Scanner(System.in);
 
@@ -16,4 +16,5 @@ public class Lab1l1 {
         System.out.println("Sum : "+number1+" + "+number2+" = "+(number1+number2));
     }
 }
+
 
