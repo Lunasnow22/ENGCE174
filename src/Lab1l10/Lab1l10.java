@@ -23,4 +23,3 @@ public class Lab1l10 {
 		System.out.println("CalculateArea : "+CalculateArea);
 	}
 }
-

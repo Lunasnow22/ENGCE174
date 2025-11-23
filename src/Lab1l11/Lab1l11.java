@@ -31,4 +31,3 @@ public class Lab1l11 {
 		System.out.println("Sum : "+totalSum);
 	}
 }
-
