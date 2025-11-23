@@ -16,7 +16,8 @@ public class Lab1l7 {
     	}
     	Getvalue.close();
     	
-    	System.out.print("Sum "+ number1 +" :"+ sum + ":");
+    	System.out.print("Sum :"+ sum + ":");
     }
 }
+
 
