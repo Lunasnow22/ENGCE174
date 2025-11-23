@@ -13,5 +13,5 @@ public class Lab1l6 {
         	System.out.println(number1+" x " +i+ " = "+(number1 * i)); 
         }
     }
-
 }
+
