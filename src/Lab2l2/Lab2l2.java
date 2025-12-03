@@ -33,7 +33,6 @@ public class Lab2l2  {
 
         System.out.println("\n--- Data ---");
         studentObj.displayInfo();
-        
-        studentObj.displayInfo();
     }
 }
+
