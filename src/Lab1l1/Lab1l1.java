@@ -5,12 +5,16 @@ public class Lab1l1 {
     public static void main(String[]args) {
         Scanner Getvalue = new Scanner(System.in);
 
-        System.out.print("add Number : ");
-        int number1 = Getvalue.nextInt();
+        int number1,number2,sun;
 
         System.out.print("add Number : ");
-        int number2 = Getvalue.nextInt();
+        number1 = Getvalue.nextInt();
 
-        System.out.println("Sum : "+number1+" + "+number2+" = "+(number1+number2));
+        System.out.print("add Number : ");
+        number2 = Getvalue.nextInt();
+
+        sun = number1 + number2;
+
+        System.out.printf("Sum : %d + %d = %d ",number1,number2,sun);
     }
 }

@@ -1,4 +1,4 @@
-package Test1000;
+package Lab2l7;
 
 import java.util.Scanner;
 
@@ -32,7 +32,7 @@ class BankAccount {
 
 }
 
-public  class Test1000 {
+public  class Lab2l7 {
     public static void main(String[] args){
         Scanner Getvalue = new Scanner(System.in);
 
