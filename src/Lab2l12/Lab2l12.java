@@ -27,7 +27,7 @@ class Student {
     }
 
     public void displayEnrollment(){
-        System.out.println("Student : "+ this.name);
+        System.out.println("Student : "+ name);
         System.out.println("Enrolled in : "+ enrllCourse.getCourseInfo());
     }
 }
