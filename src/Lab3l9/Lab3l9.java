@@ -98,10 +98,11 @@ public class Lab3l9 {
         userno2.setPassword(inpUserNewPassword2);
 
         System.out.println(userno1.getPassword());
-        System.out.print(userno2.getPassword());
-        System.out.println("-----------------------------");
+        System.out.println(userno2.getPassword());
+        System.out.print("-----------------------------");
 
         Getvalue.close();
 
     }
 }
+
