@@ -63,11 +63,12 @@ public class Lab3l6 {
 
         account.withdraw(withdrawalAmouunt);
 
-        System.out.print("Final Blance: "+ account.getBalance());
-        System.out.println("------------------------------");
+        System.out.println("Final Blance: "+ account.getBalance());
+        System.out.print("------------------------------");
 
         Getvalue.close();
 
     }
     
 }
+
