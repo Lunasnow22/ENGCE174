@@ -43,9 +43,10 @@ public class Lab3l7 {
 
         System.out.println("----------------------------");
         System.out.println(emp.getEmploeeId());
-        System.out.print(emp.getDepartment());
-        System.out.println("----------------------------");
+        System.out.println(emp.getDepartment());
+        System.out.print("----------------------------");
         
         Getvalue.close();
     }
 }
+
