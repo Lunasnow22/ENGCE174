@@ -49,4 +49,3 @@ public class Lab3l7 {
         Getvalue.close();
     }
 }
-
