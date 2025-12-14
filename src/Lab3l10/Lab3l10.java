@@ -2,12 +2,12 @@ package Lab3l10;
 
 import java.util.Scanner;
 
-class SystemLogger {
+class SystemLogger{
 
     private static int currentLogLevel = 1;
 
-    private static String getLevelName(int level) {
-        switch (level) {
+    private static String getLevelName(int level){
+        switch(level){
             case 1: return "INFO";
             case 2: return "DEBUG";
             case 3: return "ERROR";
@@ -15,23 +15,24 @@ class SystemLogger {
         }
     }
 
-    public static void setLogLevel(int nLevel) {
-        if (nLevel >= 1 && nLevel <= 3) {
+    public static String setLogLevel(int nLevel){
+        if(nLevel >= 1 && nLevel <= 3){
             currentLogLevel = nLevel;
-            System.out.println("Log level set to " + getLevelName(nLevel));
-        } else {
-            System.out.println("Invalid Log Level");
+            return "Log level set to " + getLevelName(nLevel) + "\n";
+        }
+        else{
+            return "Invalid Log Level" + "\n";
         }
     }
 
-    public static void log(int mLevel, String m) {
-        if (mLevel < 1 || mLevel > 3) {
-             System.out.println("Invalid log level provided: " + mLevel);
-             return;
+    public static String log(int mLevel, String m){
+        if(mLevel < 1 || mLevel > 3){
+            return "Invalid log level provided: " + mLevel + "\n";
         }
-        if (mLevel >= currentLogLevel) {
-            System.out.println("[" + getLevelName(mLevel) + "]:" + m);
+        if(mLevel >= currentLogLevel){
+            return "[" + getLevelName(mLevel) + "]:" + m + "\n";
         }
+        return "";
     }
 }
 
@@ -39,33 +40,39 @@ public class Lab3l10 {
     public static void main(String[] args) {
         Scanner Getvalue = new Scanner(System.in);
 
+        StringBuilder finalOutput = new StringBuilder(); 
+
         System.out.print("Enter Amount Of Your Command: ");
+
         int n = 0;
-        if (Getvalue.hasNextInt()) {
+        
+        if(Getvalue.hasNextInt()){
             n = Getvalue.nextInt();
         }
-        Getvalue.nextLine();
+        Getvalue.nextLine(); 
 
-        for (int i = 0; i < n; i++) {
+        for(int i = 0; i < n; i++){
             System.out.print("Enter Command (LOG/SET): ");
 
             String command = Getvalue.nextLine().trim().toUpperCase();
 
-            if (command.equals("SET")) {
+            if(command.equals("SET")){
                 System.out.print("Enter SET Level (1-3): ");
-                if (Getvalue.hasNextInt()) {
+                if(Getvalue.hasNextInt()){
                     int level = Getvalue.nextInt();
                     Getvalue.nextLine();
-                    SystemLogger.setLogLevel(level);
-                } else {
+
+                    finalOutput.append(SystemLogger.setLogLevel(level)); 
+                }
+                else{
                     System.out.println("Invalid Level Input (Expected Integer).");
                     Getvalue.nextLine();
                 }
             } 
-            else if (command.equals("LOG")) {
+            else if(command.equals("LOG")){
                 System.out.print("Enter LOG Level (1-3): ");
                 int level = 0;
-                if (Getvalue.hasNextInt()) {
+                if(Getvalue.hasNextInt()){
                     level = Getvalue.nextInt();
                 }
                 Getvalue.nextLine();
@@ -73,12 +80,14 @@ public class Lab3l10 {
                 System.out.print("Enter LOG Message: ");
                 String message = Getvalue.nextLine().trim();
 
-                SystemLogger.log(level, message);
+                finalOutput.append(SystemLogger.log(level, message));
             } 
-            else {
+            else{
                 System.out.println("Unknown command: " + command);
             }
         }
+
+        System.out.print(finalOutput.toString()); 
 
         Getvalue.close();
     }
