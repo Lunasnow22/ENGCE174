@@ -46,8 +46,7 @@ class BankAccount {
 }
 
 public class Lab3l6 {
-    public static void main(String[] args) {
-
+    public static void main(String[] args){
         Scanner Getvalue = new Scanner(System.in);
 
         System.out.print("Enter initial Balance: ");
@@ -72,3 +71,4 @@ public class Lab3l6 {
     }
     
 }
+
