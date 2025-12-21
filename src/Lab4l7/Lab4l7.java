@@ -11,7 +11,7 @@ class Resource{
     }
 
     public void finalize()throws Throwable{
-        System.out.println("Resource "+ id +"finalized(destroyed)");
+        System.out.println("Resource "+ id +" finalized(destroyed)");
         super.finalize();
     }
 }
