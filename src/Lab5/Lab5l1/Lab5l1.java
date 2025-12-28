@@ -1,4 +1,4 @@
-package Lab5l1;
+package Lab5.Lab5l1;
 
 import java.util.Scanner;
 
